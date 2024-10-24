@@ -37,38 +37,46 @@
   }
 }
 
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Devanagari:wght@100;200;300;400;500;600;700&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap");
+
 * {
   padding: 0%;
   margin: 0%;
 }
-.middleContanir {
-  display: flex;
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  background-color: lightblue;
+  font-weight: 100;
+  overflow: scroll;
 }
 
 .mainContanir {
   height: 100vh;
   width: 100vw;
-  /* background-color: lightblue; */
-  overflow: hidden;
+  overflow: scroll;
+  box-sizing: border-box;
+  border: 2px solid green;
 }
 
 .header {
-  background-color: orangered;
-  height: 5%;
+  background-color: #ff671f;
+  height: 45px;
   width: 100%;
+
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
 #headerheading {
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  font-weight: 100;
+  font-style: normal;
   color: white;
-  font-weight: bold;
-  padding: 15px;
-}
-
-.middleContanir {
-  display: flex;
+  letter-spacing: 30;
+  line-height: auto;
 }
 
 .hanumanImage {
@@ -77,8 +85,19 @@
 }
 
 #hanumanImage {
-  height: 45%;
-  width: 45%;
+  height: 150px;
+  width: 150px;
+  padding: 10px;
+  left:15px;
+  right: 81px;
+}
+
+.middleContanir {
+  display: flex;
+}
+
+.middleContanir {
+  display: flex;
 }
 
 .middleContanir .tagsContanir,
@@ -88,14 +107,16 @@
   justify-content: flex-end;
 }
 
-.rightContanir {
+.rightContanir  {
   margin-left: auto;
   width: 100%;
+  height: 150px;
+  background-color: #282c34;
   margin-bottom: 25px;
 }
 
 .tagsContanir {
-  background-color: rgb(245, 218, 168);
+  background-color: #ff9933;
   margin-bottom: 1%;
   border-bottom-left-radius: 50px;
   padding: 5px;
@@ -105,42 +126,89 @@
   margin-right: 3%;
   color: black;
   text-decoration: none;
-}
-
-.rightContanir .show {
-  display: none;
-}
-
-.rightContanir .imageContanir {
+  font-weight: 500;
   padding: 5px;
 }
 
-.imgtag {
-  margin-right: 12px;
-  /* height: 10%; */
-  width: 10%;
+
+#firstKidImage {
+  border-radius: 10px;
+  border: 2px solid black;
+  position: absolute; 
+  left: 1480px;
+  top: 105px;
+  width: 183px;
+  height: 87px;
+
 }
 
-.rightContanir .p {
-  font-size: 1.5vw;
-  font-weight: bold;
-  color: black;
-  width: 8vw;
-  height: auto;
-  text-align: center;
-  padding: 5px;
-  /* background-color: #61dafb; */
+#secondKidImage {
+  position: absolute; 
+  left: 1280px;
+  top: 105px;
+  border-radius: 10px;
+  border: 2px solid black;
+  width: 178px;
+  height: 87px;
 }
 
-.rightContanir .imageSmallContanir {
-  display: none;
+#thirdKidImg {
+  border-radius: 10px;
+  border: 2px solid black;
+  position: absolute; 
+  left: 1080px;
+  top: 105px;
+  border-radius: 10px;
+  width: 178px;
+  height: 87px;
 }
 
-.pottarContanir {
-  position: relative;
-  height: 300px;
-  width: 100%;
+#fouthKidImg {
+  border-radius: 10px;
+  border: 2px solid black;
+  position: absolute;
+  left: 875px;
+  top: 105px;
+  width: 183px;
+  height: 87px;
 }
+
+#fifthKidImg {
+  border-radius: 10px;
+  border: 2px solid black;
+  position: absolute;
+  left: 675px;
+  top: 105px;
+  width: 178px;
+  height: 87px;
+  
+}
+
+#sixthKidImg {
+  border-radius: 10px;
+  border: 2px solid black;
+  position: absolute;
+  left: 454px;
+  top: 105px;
+
+}
+
+
+ #p{
+   font-family: "IBM Plex Sans Devanagari", sans-serif;
+position: absolute;
+font-weight :normal;
+line-height: auto;
+  left: 270px;
+  top: 125px;
+  color: white;
+  border: 2px solid black;
+  height: 50px;
+  width: 106px;
+  text-align: left;
+}
+
+
 
 .pottarImg {
   height: 100%;
@@ -148,7 +216,7 @@
   object-fit: fill;
   z-index: 1;
   position: absolute;
-  top: 0;
+  top: 220px;
   left: 0;
 }
 
@@ -156,365 +224,45 @@
   height: 100%;
   width: 100%;
   position: absolute;
-  top: 0;
-  left: 0;
+  top: 220px;
+  left: -1;
   z-index: 2;
 }
 
-.overlayimages {
-  display: flex;
+.paragraph{
+  font-family: "Nunito Sans", sans-serif;
   position: absolute;
-  top: 200px;
-  /* justify-content: center; */
-  align-items: center;
-  z-index: 2;
+  left: 60px;
+  top: 359px;
+  z-index: 3; 
+  color: white; 
+  width: 890px;
+  height: 229px;
+  font-weight: 900;
+  letter-spacing: 0;
+
+}
+
+.paragraphImg{
+  /* border: 2px solid black; */
+  position: absolute;
+  left: 909px;
+  top: 360px;
+  z-index: 3;
+  height: 336.67px;
   margin-left: 5%;
-  /* margin-right: 5%; */
-  height: 200px;
-  width: 90%;
-  /* padding: auto; */
 }
 
-.paragraph {
-  width: 50%;
-  /* height: 130px; */
-  height: 80%;
-  /* font-size: 8px; */
-  font-size: 0.4rem;
-  font-weight: bold;
-  color: white;
-  display: block;
-  margin-left: 3%;
-}
-
-.paragraphImg {
-  /* border: 2px solid gainsboro; */
-  margin-left: 2%;
-  /* height: 152px; */
-  height: 85%;
-  width: auto;
-}
-
-#overlayKidImg {
-  width: auto;
-  height: 150px;
-}
-
-.footer {
-  /* border: 2px solid rgb(190, 30, 30); */
-  display: flex;
-  align-items: center;
-  margin-top: 20px;
-  margin-left: 5%;
-  height: 250px;
-  width: 92%;
-}
-
-.footerHolyImg {
-  /* border: 2px solid brown; */
-  margin-left: 2%;
-  height:200px;
-  width: 400px;
-  margin-left: 3%;
-  margin-right: 3%;
-}
-
-#holyImg {
+.pImg{
+  border-radius: 10px;
+  width: 85%;
   height: 100%;
-  width: 100%;
-  object-fit: fill;
-}
-
-
-.foot {
- text-align: center;
- color: orangered;
- /* border: 2px solid brown; */
- margin-left: 4%;
- height:80%;
- width: 80%;
-}
-
-
-
-
-@media only screen and (max-width: 600px) {
-  .middleContanir {
-    display: block;
-  }
-
-  .header {
-    justify-content: start;
-  }
-  .hanumanImage {
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    height: 100%;
-    width: 100%;
-  }
-
-  #hanumanImage {
-    height: 30%;
-    width: 30%;
-  }
-
-  .rightContanir .tagsContanir {
-    display: none;
-  }
-
-  .rightContanir .show {
-    left: 25px;
-    display: block;
-  }
-
-  .rightContanir {
-    width: 100%;
-    left: 25px;
-  }
-
-  #open {
-    padding-left: 5px;
-  }
-
-  .showtag {
-    display: block;
-    text-decoration: none;
-    color: black;
-    padding: 13px;
-    font-size: 27px;
-    margin: 8px;
-  }
-
-
-
-  .sidebar {
-    height: 100%;
-  width: 0;
-  background-color: white;
-  transition: width 0.5s ease-in-out; /* Smooth transition */
-  overflow: hidden;
-  position: fixed;
-  top: 5%;
-  right: 0;
-  padding-top: 40px;
-  font-weight: 400;
-  z-index: 1000;
-  }
-
-
-
-  .sidebar.open {
-    width: 100%;
-    height: 100%;
-    right: 0;
-    z-index: 1;
-  }
-
-  .sidebar #closeBtn {
-    font-size: 25px;
-    top: 14px;
-    left: 19px;
-    position: absolute;
-    color: black;
-    text-decoration: none;
-  }
-
-  #icon {
-    cursor: pointer;
-    position: fixed;
-    top: 0;
-    right: 20px;
-    font-size: 35px;
-  }
-
-  .imageContanir {
-    justify-content: flex-start;
-  }
-
-  .imgtag {
-    padding: 12px;
-    width: 12%;
-  }
-
-  .rightContanir .p {
-    font-size: 10px;
-    color: black;
-    width: 100%;
-    height: auto;
-    text-align: center;
-    padding: 5px;
-  }
-
-  .rightContanir .imageContanir {
-    display: none;
-  }
-
-  .rightContanir .imageSmallContanir {
-    display: block;
-    height: 130px;
-    width: 100%;
-  }
-
-  .rightContanir .imageSmallContanir {
-    display: block;
-    text-align: center;
-  }
-
-  .carousel {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
-    width: 60%;
-    position: relative;
-  }
-
-  .smallImagetag {
-    width: 100%;
-    height: auto;
-  }
-
-  #leftRightBtn,
-  #arrowRightBtn {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    z-index: 1;
-    font-size: 45px;
-    color: black;
-    cursor: pointer;
-  }
-
-  #leftRightBtn {
-    left: 10px;
-    font-size: 55px;
-  }
-  #arrowRightBtn {
-    font-size: 55px;
-    right: 10px;
-  }
-
-  .sidebar.open ~ .carousel #leftRightBtn,
-  .sidebar.open ~ .carousel #arrowRightBtn {
-    display: none; /* Hide the buttons */
-  }
-
-  .middleContanir::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-image: url("./images/potter 1.png");
-    background-size: cover;
-    background-position: 27%;
-    background-repeat: no-repeat;
-    opacity: 0.6; /* Setting the opacity */
-    z-index: -1; /* Behind other content */
-  }
-
-  /* Hide existing image */
-  .pottarImg {
-    display: none;
-  }
-
-  /* Any other small-screen-specific styles */
-  .rightContanir .imageContanir {
-    display: none;
-  }
-
-  .pottarContanir {
-    display: none;
-  }
-
-  .red-layer {
-    display: none; 
-  }
-
-  .overlayimages {
-    /* display: block; */
-    /* border: 2px solid green; */
-    margin-top: 25%;
-    margin-left: 0;
-    height: 300px;
-  }
-
-  .paragraph {
-    text-align: center;
-    color: orangered;
-    font-size: 1.4vw;
-    height: 48%;
-    width: 100%;
-    /* border: 2px solid blue; */
-  }
-
-  .paragraphImg {
-    /* border: 2px solid red; */
-    /* margin-left: 2%; */
-    /* height: 152px; */
-    height: 55%;
-    width: auto;
-  }
-  #overlayKidImg {
-    width: 100%;
-    height: 100%;
-    margin-top: 0;
-  }
-
-  
-.footer {
-  /* border: 2px solid rgb(190, 30, 30); */
-  display: flex;
-  align-items: center;
-  /* margin-top: 20px; */
-  /* margin-left: 5%; */
-  /* height: 250px; */
-  /* width: 92%; */
-  margin-top: 65%;
-  margin-left: 0;
-  height: 300px;
-}
-
-.footerHolyImg {
-  /* border: 2px solid brown; */
-  margin-left: 2%;
-  height:200px;
-  width: 400px;
-  margin-left: 3%;
-  margin-right: 3%;
-}
-
-#holyImg {
-  /* height: 100%; */
-  /* width: 100%; */
-  margin-top: 15%;
   object-fit: cover;
-  height: 80%;
-  width: 100%;
+
 }
 
-
-.foot {
- /* text-align: center; */
- color: orangered;
- /* border: 2px solid brown; */
- margin-left: 4%;
- height:80%;
- width: 80%;
-
- color: orangered;
- font-size: 2.3vw;
- height: 59%;
- width: 100%;
- font-size: 12.5px;
-}
-
-
-.hideOverlay {
-  display: none;
-}
-
-
+.footer{
+  height: 100vh;
+  width: 100vw;
+  border: 2px solid brown;
 }
