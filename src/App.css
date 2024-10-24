@@ -46,18 +46,25 @@
 }
 
 body {
+  box-sizing: border-box;
   font-family: "Nunito Sans", sans-serif;
-  background-color: lightblue;
   font-weight: 100;
   overflow: scroll;
+}
+
+.contanir{
+  height: 200vh;
+  width: 200vh;
+  background-color: aquamarine;
+  overflow: hidden;
+  
 }
 
 .mainContanir {
   height: 100vh;
   width: 100vw;
-  overflow: scroll;
-  box-sizing: border-box;
-  border: 2px solid green;
+  overflow: hidden;
+  position: relative;
 }
 
 .header {
@@ -72,10 +79,9 @@ body {
 
 #headerheading {
   font-family: "IBM Plex Sans Devanagari", sans-serif;
-  font-weight: 100;
+  font-weight: 500;
   font-style: normal;
   color: white;
-  letter-spacing: 30;
   line-height: auto;
 }
 
@@ -88,12 +94,6 @@ body {
   height: 150px;
   width: 150px;
   padding: 10px;
-  left:15px;
-  right: 81px;
-}
-
-.middleContanir {
-  display: flex;
 }
 
 .middleContanir {
@@ -111,15 +111,12 @@ body {
   margin-left: auto;
   width: 100%;
   height: 150px;
-  background-color: #282c34;
-  margin-bottom: 25px;
 }
 
 .tagsContanir {
-  background-color: #ff9933;
+  background-color: #f3b475;
   margin-bottom: 1%;
   border-bottom-left-radius: 50px;
-  padding: 5px;
 }
 
 .rightContanir .tagsContanir .atag {
@@ -195,17 +192,19 @@ body {
 
 
  #p{
-   font-family: "IBM Plex Sans Devanagari", sans-serif;
-position: absolute;
-font-weight :normal;
-line-height: auto;
+  font-family: "IBM Plex Sans Devanagari", sans-serif;
+  position: absolute;
+  font-weight :normal;
+  line-height: auto;
   left: 270px;
-  top: 125px;
-  color: white;
-  border: 2px solid black;
-  height: 50px;
-  width: 106px;
+  top: 118px;
+  color: black;
+  font-weight: bold;
+  height: 80px;
+  width: 130px;
+  font-size: 21px;
   text-align: left;
+  border: 2px solid black;
 }
 
 
@@ -265,4 +264,39 @@ line-height: auto;
   height: 100vh;
   width: 100vw;
   border: 2px solid brown;
+  overflow: hidden;
 }
+
+
+.footerHolyImg{
+  left: 80px;
+  top: 1000px;
+  height: 320px;
+  width: 480px;
+  /* margin-right: 3%; */
+  position: absolute;
+}
+
+#holyImg{
+  border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+}
+
+.foot {
+  font-family: "Nunito Sans", sans-serif;
+  position: absolute;
+  left: 693px;
+  top: 970px;
+  width: 700px;
+  color: #F97300; 
+}
+
+.footerparegraph {
+  font-weight:bold; 
+  font-size: 35.5px; 
+}
+
+

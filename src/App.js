@@ -14,6 +14,8 @@ import holi from "./images/holi 1.png";
 export default function App() {
   return (
     <>
+    <div className="contanir">
+
       <div className="mainContanir">
         {/* Header Section */}
         <div className="header">
@@ -87,12 +89,12 @@ export default function App() {
 
 
       <div className="footer">
-        {/* <div className="footerHolyImg">
+        <div className="footerHolyImg">
           <img src={holi} alt="HolyImg" id="holyImg" />
-        </div> */}
+        </div>
 
-        {/* <div className="foot">
-          <h4 className="footerData">What we do ?</h4>
+        <div className="foot">
+          <h4 className="footerparegraph">What we do ?</h4>
           <div
             style={{
               height: "3px",
@@ -101,14 +103,16 @@ export default function App() {
               margin: "10px 0",
             }}
           ></div>
-          <h4 className="footerData">
+          <h4 className="footerparegraph">
             भजन मंडली दवारा हर मंगलवार या शनिवार को भजन का कार्यक्रम होता है,
             जिसकी महिलाएं शामिल होती हैं | संस्थान में सभी हिंदू त्योहारों को
             धूमधाम से मनाया जाता है | यहां महिला सशक्तिकरण, योग तथा अन्य
             कल्याणकारी कार्य भी करवाये जाते हैं |
           </h4>
-        </div> */}
+        </div>
       </div>
+    </div>
+
 
     </>
   );
