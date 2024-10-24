@@ -62,8 +62,8 @@ export default function App() {
             <img src={redlayer} alt="redLayer" className="red-layer" />
           </div>
 
-          <div className="paragraph" style={{ marginRight: "5%" }}>
-            <h1 id="paregraphHeading">सुविचार</h1>
+          <div className="paragraph" >
+            <h1>सुविचार</h1>
             <div
               style={{
                 height: "2px",
@@ -73,7 +73,7 @@ export default function App() {
               }}
             ></div>
 
-            <h1 id="paragraphparagraph">
+            <h1 >
               रेत और मिट्टी से हम कहानियों को आकार देते हैं | हर बर्तन एक कृति
               है, जो हाथों से बनी है और जुनून से तपाई गई है | स्वागत है उस
               दुनिया में, जहाँ सृजन हमारा हुनर है और हर कृति में एक अनकही कहानी
@@ -86,8 +86,6 @@ export default function App() {
         </div>
       </div>
 
-
-
       <div className="footer">
         <div className="footerHolyImg">
           <img src={holi} alt="HolyImg" id="holyImg" />
@@ -97,10 +95,10 @@ export default function App() {
           <h4 className="footerparegraph">What we do ?</h4>
           <div
             style={{
-              height: "3px",
-              width: "75%",
-              backgroundColor: "orangered",
-              margin: "10px 0",
+              height: "2px",
+                width: "68%",
+                backgroundColor: "#F97300",
+                margin: "10px 0",
             }}
           ></div>
           <h4 className="footerparegraph">

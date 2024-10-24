@@ -52,12 +52,11 @@ body {
   overflow: scroll;
 }
 
-.contanir{
+.contanir {
   height: 200vh;
   width: 200vh;
-  background-color: aquamarine;
+  /* background-color: aquamarine; */
   overflow: hidden;
-  
 }
 
 .mainContanir {
@@ -69,9 +68,8 @@ body {
 
 .header {
   background-color: #ff671f;
-  height: 45px;
+  height: 40px;
   width: 100%;
-
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,17 +81,13 @@ body {
   font-style: normal;
   color: white;
   line-height: auto;
-}
-
-.hanumanImage {
-  height: 20%;
-  width: 20%;
+  font-size:medium;
 }
 
 #hanumanImage {
-  height: 150px;
-  width: 150px;
-  padding: 10px;
+  height: 110px;
+  width: 110px;
+  padding: 5px;
 }
 
 .middleContanir {
@@ -107,15 +101,14 @@ body {
   justify-content: flex-end;
 }
 
-.rightContanir  {
+.rightContanir {
   margin-left: auto;
   width: 100%;
-  height: 150px;
 }
 
 .tagsContanir {
+  height: 38px;
   background-color: #f3b475;
-  margin-bottom: 1%;
   border-bottom-left-radius: 50px;
 }
 
@@ -125,178 +118,177 @@ body {
   text-decoration: none;
   font-weight: 500;
   padding: 5px;
+  font-size:medium;
+  font-weight: 500;
+  font-style: normal;
 }
-
 
 #firstKidImage {
   border-radius: 10px;
-  border: 2px solid black;
-  position: absolute; 
+  /* border: 2px solid black; */
+  position: absolute;
   left: 1480px;
-  top: 105px;
-  width: 183px;
-  height: 87px;
-
+  top: 100px;
+  width: 173px;
+  height: 77px;
 }
 
 #secondKidImage {
-  position: absolute; 
-  left: 1280px;
-  top: 105px;
+  position: absolute;
+  left: 1289px;
   border-radius: 10px;
-  border: 2px solid black;
-  width: 178px;
-  height: 87px;
+  /* border: 2px solid black; */
+  top: 100px;
+  width: 173px;
+  height: 77px;
 }
 
 #thirdKidImg {
   border-radius: 10px;
-  border: 2px solid black;
-  position: absolute; 
-  left: 1080px;
-  top: 105px;
+  /* border: 2px solid black; */
+  position: absolute;
+  left: 1090px;
   border-radius: 10px;
-  width: 178px;
-  height: 87px;
+  top: 95px;
+  top: 100px;
+  width: 173px;
+  height: 77px;
 }
 
 #fouthKidImg {
   border-radius: 10px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   position: absolute;
-  left: 875px;
-  top: 105px;
-  width: 183px;
-  height: 87px;
+  left: 886px;
+  top: 100px;
+  width: 173px;
+  height: 77px;
 }
 
 #fifthKidImg {
   border-radius: 10px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   position: absolute;
-  left: 675px;
-  top: 105px;
-  width: 178px;
-  height: 87px;
-  
+  left: 686px;
+  top: 100px;
+  width: 173px;
+  height: 77px;
 }
 
 #sixthKidImg {
   border-radius: 10px;
-  border: 2px solid black;
+  /* border: 2px solid black; */
   position: absolute;
-  left: 454px;
-  top: 105px;
-
+  left: 489px;
+  top: 100px;
+  width: 173px;
+  height: 77px;
 }
 
-
- #p{
+#p {
   font-family: "IBM Plex Sans Devanagari", sans-serif;
   position: absolute;
-  font-weight :normal;
+  font-weight: normal;
   line-height: auto;
-  left: 270px;
-  top: 118px;
+  left: 280px;
   color: black;
-  font-weight: bold;
-  height: 80px;
+  top: 107px;
+  height: 60px;
   width: 130px;
+  font-weight: bold;
   font-size: 21px;
   text-align: left;
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
 
-
-
 .pottarImg {
-  height: 100%;
+  /* height: 100%;
+  width: 100%; */
+  height: auto;
   width: 100%;
   object-fit: fill;
   z-index: 1;
   position: absolute;
-  top: 220px;
+  top: 195px;
   left: 0;
+  display: block;
 }
 
 .red-layer {
-  height: 100%;
+  height:auto;
   width: 100%;
   position: absolute;
-  top: 220px;
+  top: 195px;
   left: -1;
   z-index: 2;
 }
 
-.paragraph{
+.paragraph {
   font-family: "Nunito Sans", sans-serif;
   position: absolute;
-  left: 60px;
-  top: 359px;
-  z-index: 3; 
-  color: white; 
-  width: 890px;
-  height: 229px;
+  left: 80px;
+  top: 265px;
+  z-index: 3;
+  color: white;
+  width: 788px; /* Same width */
+  height: 346.67px; /* Same height */
   font-weight: 900;
   letter-spacing: 0;
-
+  font-size:small;
+  /* border: 2px solid black; */
+  margin-right: 5%;
+  box-sizing: border-box;
 }
 
-.paragraphImg{
+
+.pImg {
+  z-index: 3;
   /* border: 2px solid black; */
   position: absolute;
-  left: 909px;
-  top: 360px;
-  z-index: 3;
-  height: 336.67px;
-  margin-left: 5%;
-}
-
-.pImg{
   border-radius: 10px;
-  width: 85%;
-  height: 100%;
+  width: 500px;
+  height: 310.67px;
   object-fit: cover;
-
+  right: 80px;
+  top: 250px;
 }
 
-.footer{
+.footer {
   height: 100vh;
   width: 100vw;
-  border: 2px solid brown;
-  overflow: hidden;
+  /* border: 2px solid brown; */
+  overflow: visible;
+  /* background-color: lightgray; */
+
 }
 
-
-.footerHolyImg{
-  left: 80px;
-  top: 1000px;
-  height: 320px;
-  width: 480px;
-  /* margin-right: 3%; */
+#holyImg {
+  /* border: 2px solid black; */
   position: absolute;
-}
-
-#holyImg{
   border-radius: 10px;
-  width: 100%;
-  height: 100%;
   object-fit: cover;
-
+  border-radius: 10px;
+  width: 500px;
+  height: 310.67px;
+  object-fit: cover;
+  top: 970px;
+  left: 80px;
 }
 
 .foot {
   font-family: "Nunito Sans", sans-serif;
   position: absolute;
-  left: 693px;
+  box-sizing: border-box;
+  right:80px;
   top: 970px;
-  width: 700px;
-  color: #F97300; 
+  color: #F97300;
+  height: 346.67px; 
+  width: 740px; 
+  height: 346.67px; 
+  font-weight: bold;
+  font-size:33px;
+  margin-left: 5%;
+  /* border: 2px solid blue; */
+  letter-spacing: 1.3px;
 }
-
-.footerparegraph {
-  font-weight:bold; 
-  font-size: 35.5px; 
-}
-
 
