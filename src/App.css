@@ -123,9 +123,6 @@ body {
   font-style: normal;
 }
 
-
-
-
 .carousel {
   width: 81%;
   overflow: hidden;
@@ -140,14 +137,14 @@ body {
 
 .ca {
   display: flex;
-  width: calc(173px * 7); 
-  animation: scroll 30s linear infinite; 
+  width: calc(173px * 7);
+  animation: scroll 30s linear infinite;
 }
 
 .ca img {
   width: 173px;
   height: 95px;
-  margin-right: 20px; 
+  margin-right: 20px;
   border-radius: 10px;
 }
 
@@ -264,11 +261,6 @@ body {
   letter-spacing: 1.3px;
 }
 
-
-#pattImg{
+#pattImg {
   opacity: 0.3;
 }
-
-
-
-
