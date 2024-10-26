@@ -132,9 +132,8 @@ body {
   margin-left: auto;
   justify-content: center;
   position: relative;
-  border-start-start-radius: 18px;
-  border-end-start-radius: 18px;
-  border: 2px solid black;
+  border-start-start-radius: 10px;
+  border-end-start-radius: 10px;
   z-index: 1;
 }
 
@@ -144,7 +143,7 @@ body {
   top: 0;
   left: 0;
   height: 100%;
-  width: 20%; 
+  width: 25%; 
   background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
   pointer-events: none; 
   z-index: 2; 
@@ -186,7 +185,6 @@ body {
   font-weight: bold;
   font-size: 21px;
   text-align: left;
-  /* border: 2px solid black; */
 }
 
 .pottarImg {
@@ -214,7 +212,8 @@ body {
   font-family: "Nunito Sans", sans-serif;
   position: absolute;
   left: 80px;
-  top: 265px;
+  /* top: 265px; */
+  top: 50%;
   z-index: 3;
   color: white;
   width: 788px; /* Same width */
@@ -222,33 +221,28 @@ body {
   font-weight: 900;
   letter-spacing: 0;
   font-size: small;
-  /* border: 2px solid black; */
   margin-right: 5%;
   box-sizing: border-box;
 }
 
 .pImg {
   z-index: 3;
-  /* border: 2px solid black; */
   position: absolute;
   border-radius: 10px;
   width: 500px;
   height: 310.67px;
   object-fit: cover;
   right: 80px;
-  top: 250px;
+  top: 50%;
 }
 
 .footer {
   height: 100vh;
   width: 100vw;
-  /* border: 2px solid brown; */
   overflow: visible;
-  /* background-color: lightgray; */
 }
 
 #holyImg {
-  /* border: 2px solid black; */
   position: absolute;
   border-radius: 10px;
   object-fit: cover;
@@ -273,10 +267,10 @@ body {
   font-weight: bold;
   font-size: 33px;
   margin-left: 5%;
-  /* border: 2px solid blue; */
   letter-spacing: 1.3px;
 }
 
 #pattImg {
   opacity: 0.3;
 }
+

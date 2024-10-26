@@ -1,42 +1,13 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./App.css";
 import hanuman from "./images/hanuman_1.png";
 import kids from "./images/kids 3.png";
 import pottar from "./images/potter 1.png";
 import redlayer from "./images/Rectangle 6.png";
 import holi from "./images/holi 1.png";
-import patt from "./images/patt 1.png"
-
-
-function Carousel() {
-  useEffect(() => {
-    const carousel = document.querySelector('.ca');
-    let clone = carousel.innerHTML;
-    carousel.innerHTML += clone;
-
-    let scrollAmount = 0;
-    const imageWidth = 193; // Image width + margin
-    const totalImages = document.querySelectorAll('.ca img').length / 2;
-
-    function scrollCarousel() {
-      scrollAmount -= 1;
-      carousel.style.transform = `translateX(${scrollAmount}px)`;
-
-      if (scrollAmount <= -imageWidth * totalImages) {
-        scrollAmount = 0;
-      }
-
-      requestAnimationFrame(scrollCarousel);
-    }
-
-    scrollCarousel();
-  }, []);
-}
+import patt from "./images/patt 1.png";
 
 export default function App() {
-
-
-
   return (
     <>
       <div className="contanir">
@@ -68,14 +39,14 @@ export default function App() {
                 </a>
               </div>
 
-                <p id="p">भजन मंडली की झलकियाँ</p>
+              <p id="p">भजन मंडली की झलकियाँ</p>
               <div className="carousel">
                 <div className="ca">
                   <img src={kids} className="imgtag" id="first" alt="Kid 1" />
-                  <img src={patt} className="imgtag" id="second" alt="Kid 2" />
-                  <img src={patt} className="imgtag" id="third" alt="Kid 3" />
-                  <img src={patt} className="imgtag" id="fourth" alt="Kid 4" />
-                  <img src={patt} className="imgtag" id="fifth" alt="Kid 5" />
+                  <img src={kids} className="imgtag" id="second" alt="Kid 2" />
+                  <img src={kids} className="imgtag" id="third" alt="Kid 3" />
+                  <img src={kids} className="imgtag" id="fourth" alt="Kid 4" />
+                  <img src={kids} className="imgtag" id="fifth" alt="Kid 5" />
                   <img src={kids} className="imgtag" id="sixth" alt="Kid 6" />
                 </div>
               </div>
@@ -113,13 +84,10 @@ export default function App() {
         </div>
 
         <div className="footer">
-
-
-          <img src={patt} alt="pattImage" id="pattImg"/>
+          <img src={patt} alt="pattImage" id="pattImg" />
           <div className="footerHolyImg">
             <img src={holi} alt="HolyImg" id="holyImg" />
           </div>
-
           <div className="foot">
             <h4 className="footerparegraph">What we do ?</h4>
             <div
@@ -142,66 +110,3 @@ export default function App() {
     </>
   );
 }
-
-
-
-
-// <div className="carousel">
-//   <div className="ca">
-//     <img src={kids} className="imgtag" id="first" alt="Kid 1" />
-//     <img src={kids} className="imgtag" id="second" alt="Kid 2" />
-//     <img src={kids} className="imgtag" id="third" alt="Kid 3" />
-//     <img src={kids} className="imgtag" id="fourth" alt="Kid 4" />
-//     <img src={kids} className="imgtag" id="fifth" alt="Kid 5" />
-//     <img src={kids} className="imgtag" id="sixth" alt="Kid 6" />
-//   </div>
-// </div>;
-
-/*
-
-
-
-
-
-.carousel {
-  width: 80%;
-  overflow: hidden;
-  display: flex;
-  margin-left: auto;
-  justify-content: center;
-  position: relative;
-  border: 2px solid black;
-}
-
-.ca {
-  display: flex;
-  width: calc(173px * 7); 
-  animation: scroll 20s linear infinite; 
-}
-
-.ca img {
-  width: 173px;
-  height: 77px;
-  margin-right: 20px; 
-  border-radius: 10px;
-}
-
-@keyframes scroll {
-  0% {
-    transform: translateX(100%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-
-
-
-
-
-
-
-
-
-
-*/
