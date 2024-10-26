@@ -123,6 +123,7 @@ body {
   font-style: normal;
 }
 
+
 .carousel {
   width: 81%;
   overflow: hidden;
@@ -131,14 +132,28 @@ body {
   margin-left: auto;
   justify-content: center;
   position: relative;
-  /* border: 2px solid black; */
-  border-radius: 30px;
+  border-start-start-radius: 18px;
+  border-end-start-radius: 18px;
+  border: 2px solid black;
+  z-index: 1;
+}
+
+.carousel::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 20%; 
+  background-image: linear-gradient(to right, rgba(255, 255, 255, 1), rgba(255, 255, 255, 0));
+  pointer-events: none; 
+  z-index: 2; 
 }
 
 .ca {
   display: flex;
   width: calc(173px * 7);
-  animation: scroll 30s linear infinite;
+  animation: scroll 10s linear infinite;
 }
 
 .ca img {
@@ -156,6 +171,7 @@ body {
     transform: translateX(-100%);
   }
 }
+
 
 #p {
   font-family: "IBM Plex Sans Devanagari", sans-serif;
