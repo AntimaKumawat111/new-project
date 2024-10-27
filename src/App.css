@@ -208,12 +208,11 @@ body {
   z-index: 2;
 }
 
-.paragraph {
+.paragraph1 {
   font-family: "Nunito Sans", sans-serif;
   position: absolute;
   left: 80px;
-  /* top: 265px; */
-  top: 50%;
+  top: 41%;
   z-index: 3;
   color: white;
   width: 788px; /* Same width */
@@ -225,7 +224,7 @@ body {
   box-sizing: border-box;
 }
 
-.pImg {
+.overlayImage {
   z-index: 3;
   position: absolute;
   border-radius: 10px;
@@ -233,7 +232,7 @@ body {
   height: 310.67px;
   object-fit: cover;
   right: 80px;
-  top: 50%;
+  top: 41%;
 }
 
 .page2 {
@@ -273,5 +272,6 @@ body {
 
 #pattImg {
   opacity: 0.3;
+  z-index: 0;
 }
 

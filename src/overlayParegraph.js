@@ -2,7 +2,7 @@ import "./App.css";
 
 function Paragraph() {
   return (
-    <div className="paragraph">
+    <div className="paragraph1">
       <h1>सुविचार</h1>
       <div
         style={{
